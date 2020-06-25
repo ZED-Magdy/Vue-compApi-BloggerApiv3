@@ -6,7 +6,7 @@
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <router-link class="card-title" :to="'posts/'+post.id">{{post.title}}</router-link>
+        <router-link class="card-title" :to="'/posts/'+post.id">{{post.title}}</router-link>
         <p class="card-text"><small class="text-muted">{{post.updated}}</small></p>
         <b><small>{{post.labels[0]}}</small></b>
       </div>
