@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-
+import Category from '../views/Category.vue'
+import ShowPost from '../views/ShowPost.vue'
+import Search from '../views/Search.vue'
 Vue.use(VueRouter)
 
   const routes = [
@@ -13,17 +15,17 @@ Vue.use(VueRouter)
   {
     path: '/category/:name',
     name: 'Category',
-    component: () => import(/* webpackChunkName: "category" */ '../views/Category.vue')
+    component: Category
   },
   {
     path: '/posts/:id',
     name: 'ShowPost',
-    component: () => import(/* webpackChunkName: "showpost" */ '../views/ShowPost.vue')
+    component: ShowPost
   },
   {
     path: '/search/:query',
     name: 'Search',
-    component: () => import(/* webpackChunkName: "search" */ '../views/Search.vue')
+    component: Search
   }
 ]
 
