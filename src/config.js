@@ -1,0 +1,2 @@
+export const API_KEY = "AIzaSyA6u5xmvMOHNcOYQe0YUd2VVsYCFI2NaSw";
+export const BLOG_ID = "4498914292420755533";
